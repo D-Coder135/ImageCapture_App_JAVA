@@ -22,12 +22,9 @@ public class MainActivity extends AppCompatActivity {
         cameraButton = findViewById(R.id.button);
         imageView = findViewById(R.id.imageView);
 
-        cameraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 0);
-            }
+        cameraButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            startActivityForResult(intent, 0);
         });
     }
 
