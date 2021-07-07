@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         cameraButton = findViewById(R.id.button);
+        imageView = findViewById(R.id.imageView);
     }
 }
